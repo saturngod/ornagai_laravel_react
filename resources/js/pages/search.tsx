@@ -2,6 +2,8 @@ import { Search } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { useState } from "react"
 import HomeLayout from "@/layouts/home-layout";
+import DualVoiceButtons from "@/components/DualVoiceButtons";
+import SimplePronunciationButton from "@/components/SimplePronunciationButton";
 
 interface WordDataExample {
     id: number;
@@ -77,9 +79,12 @@ export default function SearchPage({ query, words, myWords }: SearchProps) {
                     <div className="space-y-6">
                         {words.map((word) => (
                             <div key={word.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-6">
-                                <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-                                    {word.word}
-                                </h2>
+                                <div className="flex items-center justify-between mb-4">
+                                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                                        {word.word}
+                                    </h2>
+                                    <DualVoiceButtons text={word.word} />
+                                </div>
                                 
                                 {/* Display word data (definitions, pronunciations, etc.) */}
                                 {word.word_data && word.word_data.length > 0 && (
@@ -113,8 +118,13 @@ export default function SearchPage({ query, words, myWords }: SearchProps) {
                                                         </h4>
                                                         <ul className="space-y-1">
                                                             {data.examples.map((example) => (
-                                                                <li key={example.id} className="text-sm text-gray-600 dark:text-gray-400 italic">
-                                                                    "  {example.example}"
+                                                                <li key={example.id} className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 italic">
+                                                                    <span>"  {example.example}"</span>
+                                                                    <SimplePronunciationButton 
+                                                                        text={example.example} 
+                                                                        accent="us"
+                                                                        className="opacity-70 hover:opacity-100"
+                                                                    />
                                                                 </li>
                                                             ))}
                                                         </ul>
