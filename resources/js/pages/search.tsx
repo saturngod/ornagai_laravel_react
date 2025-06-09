@@ -63,16 +63,11 @@ export default function SearchPage({ query, words, myWords }: SearchProps) {
     return (
         <HomeLayout searchValue={query || ""}>
             <div className="py-8">
-                <div className="text-center mb-8">
-                    <h1 className="text-3xl font-bold mb-4">Search Results</h1>
-                    {query ? (
-                        <p className="text-lg text-gray-600 dark:text-gray-400">
-                            Results for: <span className="font-semibold text-gray-900 dark:text-gray-100">"{query}"</span>
-                        </p>
-                    ) : (
+                {!query && (
+                    <div className="text-center mb-8">
                         <p className="text-gray-500 dark:text-gray-400">No search query provided</p>
-                    )}
-                </div>
+                    </div>
+                )}
 
                 {/* Display English search results */}
                 {words && words.length > 0 && (
