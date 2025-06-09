@@ -88,7 +88,7 @@ export default function SearchPage({ query, words, myWords }: SearchProps) {
                                             <div key={data.id} className="border-l-4 border-blue-500 pl-4">
                                                 {/* IPA Pronunciation */}
                                                 {data.ipa && (
-                                                    <p className="text-sm text-gray-600 dark:text-gray-400 font-mono mb-2">
+                                                    <p className="text-lg text-gray-600 dark:text-gray-400 font-ipa mb-2">
                                                         /{data.ipa}/
                                                     </p>
                                                 )}
@@ -160,7 +160,7 @@ export default function SearchPage({ query, words, myWords }: SearchProps) {
                                             <div key={data.id} className="border-l-4 border-green-500 pl-4">
                                                 {/* Phonetics */}
                                                 {data.phonetics && (
-                                                    <p className="text-sm text-gray-600 dark:text-gray-400 font-mono mb-2">
+                                                    <p className="text-sm text-gray-600 dark:text-gray-400 font-ipa mb-2">
                                                         /{data.phonetics}/
                                                     </p>
                                                 )}
