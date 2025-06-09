@@ -1,0 +1,153 @@
+/* Apple Dictionary CSS Styles */
+/* This CSS provides a clean, Apple-style appearance for dictionary entries */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dictionary Entry Container */
+d\\:entry {
+    display: block;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Word Title (h1) */
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+/* Paragraphs */
+p {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Part of Speech and Pronunciation */
+p b {
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* IPA Pronunciation */
+p:has(b) {
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+    font-size: 13px;
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border-left: 3px solid;
+}
+
+/* Definition paragraphs */
+p:not(:has(b)):not(:has(i)) {
+    font-size: 15px;
+    margin: 12px 0;
+    padding-left: 0;
+}
+
+/* Example sentences */
+p i {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+p:has(i) {
+    border-left: 3px solid;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Myanmar Unicode Support */
+@font-face {
+    font-family: 'Myanmar Text';
+    src: local('Myanmar Text'), local('MyanmarText-Regular');
+}
+
+/* Myanmar text styling */
+p:contains('၀'), p:contains('၁'), p:contains('၂'), p:contains('၃'), p:contains('၄'), 
+p:contains('၅'), p:contains('၆'), p:contains('၇'), p:contains('၈'), p:contains('၉'),
+p[lang="my"] {
+    font-family: 'Myanmar Text', 'Noto Sans Myanmar', 'Myanmar3', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+        font-size: 13px;
+    }
+    
+    d\\:entry {
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        font-size: 12px;
+    }
+    
+    d\\:entry {
+        border: 1px solid;
+        box-shadow: none;
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    d\\:entry {
+        border: 2px solid;
+    }
+    
+    p:has(b) {
+        border-left-width: 4px;
+    }
+    
+    p:has(i) {
+        border-left-width: 4px;
+    }
+}

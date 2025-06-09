@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>English</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.comquas.dictionary.ornagai</string>
+    <key>CFBundleName</key>
+    <string>Ornagai</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>DCSDictionaryLanguage</key>
+    <string>my</string>
+    <key>DCSDictionarySourcePath</key>
+    <string>dictionary.xml</string>
+    <key>DCSDictionaryTitle</key>
+    <string>Ornagai</string>
+</dict>
+</plist>
