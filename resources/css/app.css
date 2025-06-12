@@ -15,7 +15,7 @@
 
 /* Custom font utility class for IPA text */
 .font-ipa {
-  font-family: 'DoulosSILW', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-family: DoulosSILW, 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
 }
 
 @theme {

@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId">
+  <metadata>
+    <dc:title>Ornagai</dc:title>
+    <dc:creator opf:role="aut">Saturngod</dc:creator>
+    <dc:language>en-us</dc:language>
+    <meta name="cover" content="my-cover-image" />
+    <x-metadata>
+      <DictionaryInLanguage>en-us</DictionaryInLanguage>
+      <DictionaryOutLanguage>en-us</DictionaryOutLanguage>
+      <DefaultLookupIndex>default</DefaultLookupIndex>
+    </x-metadata>
+  </metadata>
+  <manifest>
+    <!-- <item href="cover-image.jpg" id="my-cover-image" media-type="image/jpg" /> -->
+    <item id="cover"
+          href="cover.html"
+          media-type="application/xhtml+xml" />
+    <item id="usage"
+          href="usage.html"
+          media-type="application/xhtml+xml" />
+    <item id="copyright"
+          href="copyright.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_1"
+          href="content_part_1.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_2"
+          href="content_part_2.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_3"
+          href="content_part_3.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_4"
+          href="content_part_4.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_5"
+          href="content_part_5.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_6"
+          href="content_part_6.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_7"
+          href="content_part_7.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_8"
+          href="content_part_8.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_9"
+          href="content_part_9.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_10"
+          href="content_part_10.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_11"
+          href="content_part_11.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_12"
+          href="content_part_12.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_13"
+          href="content_part_13.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_14"
+          href="content_part_14.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_15"
+          href="content_part_15.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_16"
+          href="content_part_16.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_17"
+          href="content_part_17.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_18"
+          href="content_part_18.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_19"
+          href="content_part_19.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_20"
+          href="content_part_20.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_21"
+          href="content_part_21.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_22"
+          href="content_part_22.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_23"
+          href="content_part_23.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_24"
+          href="content_part_24.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_25"
+          href="content_part_25.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_26"
+          href="content_part_26.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_27"
+          href="content_part_27.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_28"
+          href="content_part_28.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_29"
+          href="content_part_29.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_30"
+          href="content_part_30.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_31"
+          href="content_part_31.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_32"
+          href="content_part_32.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_33"
+          href="content_part_33.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_34"
+          href="content_part_34.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_35"
+          href="content_part_35.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_36"
+          href="content_part_36.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_37"
+          href="content_part_37.html"
+          media-type="application/xhtml+xml" />
+    <item id="content_part_38"
+          href="content_part_38.html"
+          media-type="application/xhtml+xml" />
+  </manifest>
+  <spine>
+    <itemref idref="cover" />
+    <itemref idref="usage" />
+    <itemref idref="copyright"/>
+    <itemref idref="content_part_1"/>
+    <itemref idref="content_part_2"/>
+    <itemref idref="content_part_3"/>
+    <itemref idref="content_part_4"/>
+    <itemref idref="content_part_5"/>
+    <itemref idref="content_part_6"/>
+    <itemref idref="content_part_7"/>
+    <itemref idref="content_part_8"/>
+    <itemref idref="content_part_9"/>
+    <itemref idref="content_part_10"/>
+    <itemref idref="content_part_11"/>
+    <itemref idref="content_part_12"/>
+    <itemref idref="content_part_13"/>
+    <itemref idref="content_part_14"/>
+    <itemref idref="content_part_15"/>
+    <itemref idref="content_part_16"/>
+    <itemref idref="content_part_17"/>
+    <itemref idref="content_part_18"/>
+    <itemref idref="content_part_19"/>
+    <itemref idref="content_part_20"/>
+    <itemref idref="content_part_21"/>
+    <itemref idref="content_part_22"/>
+    <itemref idref="content_part_23"/>
+    <itemref idref="content_part_24"/>
+    <itemref idref="content_part_25"/>
+    <itemref idref="content_part_26"/>
+    <itemref idref="content_part_27"/>
+    <itemref idref="content_part_28"/>
+    <itemref idref="content_part_29"/>
+    <itemref idref="content_part_30"/>
+    <itemref idref="content_part_31"/>
+    <itemref idref="content_part_32"/>
+    <itemref idref="content_part_33"/>
+    <itemref idref="content_part_34"/>
+    <itemref idref="content_part_35"/>
+    <itemref idref="content_part_36"/>
+    <itemref idref="content_part_37"/>
+    <itemref idref="content_part_38"/>
+  </spine>
+  <guide>
+    <reference type="index" title="IndexName" href="content_part_1.html"/>
+  </guide>
+</package>
